@@ -1,6 +1,14 @@
 * scsh_adventures
 ** what is it?
    collection of scsh scripts to perform some funny or tedious tasks
+*** wstaw.scm
+    takes a path to an image as an argument, and posts it to
+    [[http://wstaw.org/][wstaw.org]] image hosting service. i recommend using `-p' option, so
+    that it's "private", meaning it will not show up on the front page
+    aggregator. there are also `-t "tag1 tag2"' and `-c "comment"'
+    options, but yeah who cares.
+
+    oh, and it requires [[http://curl.haxx.se/][curl]].
 ** what is it for?
    inspired by [[http://www.jwz.org/hacks/][jwz's hacks collection]] and sometimes non obvious fact
    that humans are not computers, i realized that it's a romantic idea
@@ -19,5 +27,10 @@
    who should i thank? my so-called ``colleagues,'' who laugh at
    me behind... oh, um, sorry for that. i'd like to thank Olin Shivers
    and the rest of scsh team for making it all possible.
+** license
+   do with it whatever you want, i'll be happy if you let me know that
+   you find it interesting (i hope you do and this will make you stop
+   writing shell scripts), or that you use it (some of them are
+   actually useful! how crazy is that!)
 ** author
    Adam Michalik <adam@michalik.es>
