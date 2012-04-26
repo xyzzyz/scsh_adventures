@@ -1,0 +1,22 @@
+* scsh_adventures
+** what is it?
+   collection of scsh scripts to perform some funny or tedious tasks
+** what is it for?
+   inspired by [[http://www.jwz.org/hacks/][jwz's hacks collection]] and sometimes non obvious fact
+   that humans are not computers, i realized that it's a romantic idea
+   to make computers do stuff for me. i'm not sure if thanks to them,
+   i'll save more time than i wasted writing them (or this readme, for
+   that matter), but at least this makes it clear who is the
+   dominating side in my polyamorous relationships with computers.
+** is it any good for me?
+   no, because these are scsh scripts, and you probably don't care
+   enough to install scsh interpreter
+** wait, what? why scsh? what the hell is that anyway?
+   why scsh? let me get this straight -- you write (ba|)sh scripts and
+   you ask why scsh? what is it, repressed memory? Stockholm syndrome?
+** acknowledgments
+   who should i thank? my so-called ``colleagues,'' who laugh at
+   me behind... oh, um, sorry for that. i'd like to thank Olin Shivers
+   and the rest of scsh team for making it all possible.
+** author
+   Adam Michalik <adam@michalik.es>
