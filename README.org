@@ -10,7 +10,8 @@
    dominating side in my polyamorous relationships with computers.
 ** is it any good for me?
    no, because these are scsh scripts, and you probably don't care
-   enough to install scsh interpreter
+   enough to install scsh interpreter.
+   i'm a terrible scheme/scsh programmer anyway.
 ** wait, what? why scsh? what the hell is that anyway?
    why scsh? let me get this straight -- you write (ba|)sh scripts and
    you ask why scsh? what is it, repressed memory? Stockholm syndrome?
