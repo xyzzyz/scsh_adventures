@@ -1,12 +1,13 @@
 * scsh_adventures
 ** what is it?
    collection of scsh scripts to perform some funny or tedious tasks
+*** general
+    --help should work (i hate assholes who don't support it)
 *** wstaw.scm
     takes a path to an image as an argument, and posts it to
     [[http://wstaw.org/][wstaw.org]] image hosting service. i recommend using `-p' option, so
     that it's "private", meaning it will not show up on the front page
-    aggregator. there are also `-t "tag1 tag2"' and `-c "comment"'
-    options, but yeah who cares.
+    aggregator. there are also tags and comments, but who cares.
 
     oh, and it requires [[http://curl.haxx.se/][curl]].
 ** what is it for?

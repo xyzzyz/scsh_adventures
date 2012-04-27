@@ -50,6 +50,10 @@
     (set! images
           (args-fold command-line-arguments
                      (list
+                      (option '(#\h "help") #f #f
+                              (lambda (opt name args images)
+                                (usage)
+                                (exit 0)))
                       (option '(#\p "private") #f #f
                               (lambda (opt name args images)
                                 (set! private? #t)
@@ -74,6 +78,8 @@
 (define (main arg)
   (ensure-curl)
   (receive (images private? comment tags) (parse-command-line)
-           (map (lambda (file)
-                  (format #t "~A~%" (send-image file private? comment tags)))
-                images)))
+           (if (null? images)
+               (begin (usage) (exit -1))
+               (map (lambda (file)
+                      (format #t "~A~%" (send-image file private? comment tags)))
+                    images))))
