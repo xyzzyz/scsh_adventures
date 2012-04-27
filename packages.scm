@@ -1,4 +1,4 @@
 (define-structure wstaw (export wstaw-image)
-  (open scheme)
+  (open scsh)
   (files wstaw))
 
