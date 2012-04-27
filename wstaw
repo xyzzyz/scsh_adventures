@@ -53,3 +53,7 @@
                (map (lambda (file)
                       (format #t "~A~%" (send-image file private? comment tags)))
                     images))))
+
+;; Local Variables:
+;; mode: Scheme
+;; End:
