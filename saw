@@ -1,0 +1,36 @@
+#!/usr/bin/scsh \
+-ll xyzzyz.scm -o send-image -o srfi-37 -e main -s
+!#
+
+(define *screenshot-path* "/home/dodek/screenshots/")
+
+(define (usage)
+  (format (error-output-port) "Usage: ~A [-s|--select]\n" (argv 0)))
+
+(define (scrot-and-wstaw select?)
+  (let* ((datestring (format-date "~Y-~m-~dT~H:~M:~S" (date)))
+         (path (format #f "~A~A.png" *screenshot-path* datestring)))
+    (if (zero? (run (scrot,@(if select? '(-s) '(-d 0)) ,path)))
+        (run (xclip "-i" -selection clipboard) (<< ,(send-image path #t #f #f)))
+        (error "scrot"))))
+
+(define (main arg)
+  (let ((select? #f))
+    (args-fold command-line-arguments
+               (list
+                (option '(#\h "help") #f #f
+                        (lambda (opt name arg loads)
+                          (usage)
+                          (exit 0)))
+                (option '(#\s "select") #f #f
+                        (lambda (opt name arg loads)
+                          (set! select? #t))))
+               (lambda (opt name arg loads)
+                 (error (format #f "Unrecognized option: ~A" name)))
+               (lambda (op loads) (cons op loads))
+               '())
+    (scrot-and-wstaw select?)))
+
+;; Local Variables:
+;; mode: Scheme
+;; End:

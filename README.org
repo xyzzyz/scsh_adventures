@@ -3,13 +3,16 @@
    collection of scsh scripts to perform some funny or tedious tasks
 *** general
     --help should work (i hate assholes who don't support it)
-*** wstaw.scm
-    takes a path to an image as an argument, and posts it to
+*** wstaw
+    takes a path to an image as an argument, and uploads it to
     [[http://wstaw.org/][wstaw.org]] image hosting service. i recommend using `-p' option, so
     that it's "private", meaning it will not show up on the front page
     aggregator. there are also tags and comments, but who cares.
 
     oh, and it requires [[http://curl.haxx.se/][curl]].
+*** saw
+    takes a screenshot using scrot, uploads it to wstaw.org, and puts
+    the URL in clipboard using xclip.
 ** what is it for?
    inspired by [[http://www.jwz.org/hacks/][jwz's hacks collection]] and sometimes non obvious fact
    that humans are not computers, i realized that it's a romantic idea
