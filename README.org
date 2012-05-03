@@ -16,7 +16,7 @@
 ** what is it for?
    inspired by [[http://www.jwz.org/hacks/][jwz's hacks collection]] and sometimes non obvious fact
    that humans are not computers, i realized that it's a romantic idea
-   to make computers do stuff for me. i'm not sure if thanks to them,
+   to make computers do stuff for me. i'm not sure if thanks to these scripts,
    i'll save more time than i wasted writing them (or this readme, for
    that matter), but at least this makes it clear who is the
    dominating side in my polyamorous relationships with computers.
